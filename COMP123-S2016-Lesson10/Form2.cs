@@ -10,18 +10,22 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Lesson10
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.SecondForm.Show();
-            this.Hide();
+            Application.Exit();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.FirstForm.Show();
+            this.Hide();
+        }
     }
 }

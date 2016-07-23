@@ -6,17 +6,25 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_Lesson10
 {
-    static class Program
+    public static class Program
     {
+        public static SplashScreenForm SplashScreen;
+        public static Form1 FirstForm;
+        public static Form2 SecondForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            FirstForm = new Form1();
+            SecondForm = new Form2();
+            SplashScreen = new SplashScreenForm();
+
+            Application.Run(SplashScreen);
         }
     }
 }
