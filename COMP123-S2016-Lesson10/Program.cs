@@ -20,8 +20,8 @@ namespace COMP123_S2016_Lesson10
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            FirstForm = new Form1();
             SecondForm = new Form2();
+            FirstForm = new Form1();
             SplashScreen = new SplashScreenForm();
 
             Application.Run(SplashScreen);
